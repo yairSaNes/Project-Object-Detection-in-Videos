@@ -1,0 +1,51 @@
+MODEL:
+  VID:
+    METHOD: "fgfa"
+    ROI_BOX_HEAD:
+      REDUCE_CHANNEL: True
+#    RPN:
+#      REF_POST_NMS_TOP_N: 200 #addition
+    FGFA:
+#      MIN_OFFSET: -9
+#      MAX_OFFSET: 9
+#      ALL_FRAME_INTERVAL: 19
+#      KEY_FRAME_LOCATION: 9
+###########################
+#     val configs
+      # 7 frames
+#      MIN_OFFSET: -3
+#      MAX_OFFSET: 3
+#      ALL_FRAME_INTERVAL: 7
+#      KEY_FRAME_LOCATION: 3
+      # 3 frames
+#      MIN_OFFSET: -1
+#      MAX_OFFSET: 1
+#      ALL_FRAME_INTERVAL: 3
+#      KEY_FRAME_LOCATION: 1
+      # 1 frame
+      MIN_OFFSET: -1
+      MAX_OFFSET: 1
+      ALL_FRAME_INTERVAL: 1
+      KEY_FRAME_LOCATION: 0
+##################################
+  META_ARCHITECTURE: "GeneralizedRCNNFGFA"
+  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
+  BACKBONE:
+    CONV_BODY: "R-50-C4"
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 12
+    FEATURE_EXTRACTOR: "ResNetConv52MLPFeatureExtractor"
+    PREDICTOR: "FPNPredictor"
+  ROI_HEADS:
+    NMS: 0.5 #addition
+#    DETECTIONS_PER_IMG: 150 #addition
+  RPN:
+    ANCHOR_SIZES: (16, 32, 64, 128, 256, 512) # addition
+#    ANCHOR_STRIDE:  (16,) #addition
+#    ASPECT_RATIOS:  (0.5, 1.0,1.5, 2.0) #addition
+#    FG_IOU_THRESHOLD:  0.75 #addition
+#    BG_IOU_THRESHOLD: 0.4 #addition
+#    NMS_THRESH: 0.7 #addition
+DATASETS:
+  TRAIN: ("VID_VIS_train_15frames",)
+  TEST: ("VID_val_videos",)

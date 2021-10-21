@@ -1,0 +1,26 @@
+MODEL:
+  VID:
+    METHOD: "fgfa"
+    ROI_BOX_HEAD:
+      REDUCE_CHANNEL: True
+    FGFA:
+      #      MIN_OFFSET: -9
+      #      MAX_OFFSET: 9
+      #      ALL_FRAME_INTERVAL: 19
+      #      KEY_FRAME_LOCATION: 9
+      MIN_OFFSET: -2
+      MAX_OFFSET: 2
+      ALL_FRAME_INTERVAL: 5
+      KEY_FRAME_LOCATION: 2
+  META_ARCHITECTURE: "GeneralizedRCNNFGFA"
+  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
+  BACKBONE:
+    CONV_BODY: "R-50-C4"
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 12
+    FEATURE_EXTRACTOR: "ResNetConv52MLPFeatureExtractor"
+    PREDICTOR: "FPNPredictor"
+DATASETS:
+  TRAIN: ("VID_VIS_train_15frames",)
+  TEST: ("VID_val_videos",)
+
