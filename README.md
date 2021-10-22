@@ -16,7 +16,11 @@ the basic code found here belongs to:
 
 as can be found in https://github.com/Scalsol/mega.pytorch
 
-atereations are made by Yair and Adi
+alterations are made by Yair and Adi
+
+there is also use of evaluation package ODEVal by Moshe Shilemay
+as can be found in https://github.com/moshes7/odeval
+
 
 special thanks to Yihong Chen, Yue Cao, Han Hu, Liwei Wang for the use of MEGA.pytorch.
 
