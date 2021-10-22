@@ -21,6 +21,9 @@ alterations are made by Yair and Adi
 there is also use of evaluation package ODEVal by Moshe Shilemay
 as can be found in https://github.com/moshes7/odeval
 
+project report, as well as poster and the presentation can be found in:
+https://drive.google.com/drive/folders/12nOI-zXibZWw8Ar0lNLVRvOm51g1k8BI?usp=sharing
+
 
 special thanks to [Yihong Chen](https://scalsol.github.io), [Yue Cao](http://yue-cao.me), [Han Hu](https://ancientmooner.github.io/), [Liwei Wang](http://www.liweiwang-pku.com/) for the use of MEGA.pytorch.
 
