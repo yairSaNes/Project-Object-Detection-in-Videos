@@ -22,7 +22,7 @@ there is also use of evaluation package ODEVal by Moshe Shilemay
 as can be found in https://github.com/moshes7/odeval
 
 
-special thanks to Yihong Chen, Yue Cao, Han Hu, Liwei Wang for the use of MEGA.pytorch.
+special thanks to [Yihong Chen](https://scalsol.github.io), [Yue Cao](http://yue-cao.me), [Han Hu](https://ancientmooner.github.io/), [Liwei Wang](http://www.liweiwang-pku.com/) for the use of MEGA.pytorch.
 
 
 
