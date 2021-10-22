@@ -3,13 +3,13 @@
 
 this repo is a code back up of a project, made by Yair Sa-nes & Adi Itzhaki and supervised by Moshe Shilemay
 the basic code found here belongs to:
-...
+
 @inproceedings{chen20mega,
     Author = {Chen, Yihong and Cao, Yue and Hu, Han and Wang, Liwei},
     Title = {Memory Enhanced Global-Local Aggregation for Video Object Detection},
     Conference = {CVPR},
     Year = {2020}
-...
+
 as can be found in https://github.com/Scalsol/mega.pytorch
 
 atereations are made by Yair and Adi
